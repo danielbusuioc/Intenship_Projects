@@ -6,11 +6,69 @@
         <meta charset="utf-8">
         <title>Homepage</title>
         <link rel="stylesheet" href="assets/stylesheets/main.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        </style>
 
     </head>
 
     <body>
 
+        <header>
+            <nav role="navigation">
+                <div id="menu-toggle">
+
+                    <input type="checkbox">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu">
+                        
+                        <li class="menu-header">
+                            <a href="#">Products</a>
+                            <ul class="sub-menu">
+
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Products</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Use cases</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="menu-header">
+                            <a href="#">Company</a>
+                            <ul class="sub-menu">
+
+                                <li>
+                                    <a href="#">Docs</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Jobs</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--
         <header>
 
             <section class="header-top">
@@ -102,276 +160,294 @@
             </section>
 
         </header>
-
+        -->
         <section class="first-section">
-            <h2>Understand the Human Behind the Device</h2>
-            <h4>Risk Data Acquisition With Maximum Control</h4>
-            <p>Moonsense delivers comprehensive real-world data for fraud detection and account security. Providing seamless integration with apps and services, we empower teams to process behavioral insights while maintaining control of user data.</p>
-            <a href="#" class="btn">Schedule a Demo</a>
+            <div class="container">
+                <h2>Understand the Human Behind the Device</h2>
+                <h3>Risk Data Acquisition With Maximum Control</h3>
+                <p>Moonsense delivers comprehensive real-world data for fraud detection and account security. Providing seamless integration with apps and services, we empower teams to process behavioral insights while maintaining control of user data.</p>
+                <a href="#" class="btn">Schedule a Demo</a>
+            </div>
         </section>
 
         <section class="second-section">
-
             <div class="container">
-                <h4>Rich Behavioral Data for Identity Verification</h4>
-                <h2>Protect Accounts and Transactions</h2>
-                <p>Behavioral biometrics - how users behave and interact with devices and applications - is fundamentally changing account and transaction security. Each user’s unique pattern of behavior forms a virtual signature allowing teams to ensure the identity of the user, the security of the account or transaction, and even to streamline the user experience. </p>
-            </div>
 
-            <div class="grid">
+                <div">
+                    <h4>Rich Behavioral Data for Identity Verification</h4>
+                    <h2>Protect Accounts and Transactions</h2>
+                    <p>Behavioral biometrics - how users behave and interact with devices and applications - is fundamentally changing account and transaction security. Each user’s unique pattern of behavior forms a virtual signature allowing teams to ensure the identity of the user, the security of the account or transaction, and even to streamline the user experience. </p>
+                </div>
 
-                <div class="col-2-4">
-                    <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/bug_96de9e64.svg">
-                    <h3>Flag Malware & Remote Access Tools</h3>
-                    <p>Scam victims are “socially engineered” into providing device access using remote access tools. With Moonsense behavioral insights such as touch events and device orientation you can flag fraudulent users.</p>
-                </div><!--
-                    
-                --><div class="col-2-4">
-                    <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/mobile-purple_33903dda.svg">
-                    <h3>Identify Mobile Emulators</h3>
-                    <p>Mobile device emulators spoof devices and mimic user behavior for account takeover. With Moonsense data, such as accelerator and gyroscope signals, you can easily identify fraudulent accounts.</p>
-                </div><!--
-                    
-                --><div class="col-2-4">
-                    <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/danger_68dc6038.svg">
-                    <h3>Stop Social Engineering Scams</h3>
-                    <p>Bad actors try to influence users into providing device access. Moonsense insights will track unusual usage, such as atypical typing or login behavior, to help you crack down on these scams.</p>
-                </div><!--
+                <div>
 
-                --><div class="col-2-4">
-                    <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/ninja_c1cb1a03.svg">
-                    <h3>Guard Against Credential Theft</h3>
-                    <p>Mobile device and account credential theft are common. Moonsense helps you guard against fraud with data points across location, GPS, and accelerometer to identify suspected theft.</p>
+                    <div class="col-2-4">
+                        <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/bug_96de9e64.svg">
+                        <h3>Flag Malware & Remote Access Tools</h3>
+                        <p>Scam victims are “socially engineered” into providing device access using remote access tools. With Moonsense behavioral insights such as touch events and device orientation you can flag fraudulent users.</p>
+                    </div><!--
+                        
+                    --><div class="col-2-4">
+                        <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/mobile-purple_33903dda.svg">
+                        <h3>Identify Mobile Emulators</h3>
+                        <p>Mobile device emulators spoof devices and mimic user behavior for account takeover. With Moonsense data, such as accelerator and gyroscope signals, you can easily identify fraudulent accounts.</p>
+                    </div><!--
+                        
+                    --><div class="col-2-4">
+                        <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/danger_68dc6038.svg">
+                        <h3>Stop Social Engineering Scams</h3>
+                        <p>Bad actors try to influence users into providing device access. Moonsense insights will track unusual usage, such as atypical typing or login behavior, to help you crack down on these scams.</p>
+                    </div><!--
+
+                    --><div class="col-2-4">
+                        <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/ninja_c1cb1a03.svg">
+                        <h3>Guard Against Credential Theft</h3>
+                        <p>Mobile device and account credential theft are common. Moonsense helps you guard against fraud with data points across location, GPS, and accelerometer to identify suspected theft.</p>
+                    </div>
+
                 </div>
 
             </div>
-
         </section>
 
         <section class="third-section">
 
-            <div>
-                <h4>The Moonsense Solution</h4>
-                <h2>Telling User Stories with Behavioral Data</h2>
-                <p>Gather behavioral data based on unique user interactions that tell a story of authentic behavior. The Moonsense SDK captures a user's journey of how they type, scroll, log in and elements of their environment. By unbundling the behavioral biometrics risk stack, your internal teams can manage custom internal analysis, privacy and control for reducing risk.</p>
-            </div>
+                <div class="container">
 
-            <aside>
-                <img src="assets/images/third-section.png" alt="website behavioral data picture">
-            </aside>
+                    <div>
+                        <h4>The Moonsense Solution</h4>
+                        <h2>Telling User Stories with Behavioral Data</h2>
+                        <p>Gather behavioral data based on unique user interactions that tell a story of authentic behavior. The Moonsense SDK captures a user's journey of how they type, scroll, log in and elements of their environment. By unbundling the behavioral biometrics risk stack, your internal teams can manage custom internal analysis, privacy and control for reducing risk.</p>
+                    </div>
+
+                    <aside>
+                        <img src="assets/images/third-section.png" alt="website behavioral data picture">
+                    </aside>
+
+                </div>
+
+                <div class="container">
+
+                    <div>
+
+                        <h4>Designed for Developers</h4>
+                        <h2>Behavioral Data Purpose-Built for Developers</h2>
+                        <p>The Moonsense SDK gives developers seamless access to physical environment and behavioral insights for building superior apps and services.</p>
+                        
+                        <a class="btn" href="#" target="_blank">
+                            <span>Read the Documentation</span>
+                            <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/right-arrow-light_ac53888e.svg">
+                        </a>            
+
+                    </div>
+
+                    <script>
+                    /*
+                    <aside>
+
+                        <div>
+                            <div>iOS</div>
+                            <div>Android</div>
+                            <div>Web</div>
+                        </div>
+
+                        <code class="ios">
+                            <ol>
+                                <pre><!--
+                                    --><li>import MoonsenseSDK</li><!--
+                                    --><li> </li><!--
+                                    --><li>Moonsense.initialize(</li><!--
+                                    --><li>&emsp;publicToken: "ADD PUBLIC TOKEN HERE .."</li><!--
+                                    --><li>)</li><!--
+                                    --><li> </li><!--
+                                    --><li>var session: Session? = try? Moonsense.startSession(</li><!--
+                                    --><li>&emsp;duration: 15,</li><!--
+                                    --><li>&emsp;labels: ["label1", "label2"]</li><!--
+                                    --><li>)</li><!--
+                                    --><li> </li><!--
+                                    --><li>session?.stopSession()</li><!--
+                                --></pre>
+                            </ol>
+                        </code>
+
+                        <code class="android">
+                            <ol>
+                                <pre><!--
+                                    --><li>import io.moonsense.sdk.Moonsense</li><!--
+                                    --><li> </li><!--
+                                    --><li>Moonsense.initialize(</li><!--
+                                    --><li>&emsp;context,</li><!--
+                                    --><li>&emsp;"ADD PUBLIC TOKEN HERE .."</li><!--
+                                    --><li>)</li><!--
+                                    --><li> </li><!--
+                                    --><li>var session = Moonsense.startSession((</li><!--
+                                    --><li>&emsp;15,</li><!--
+                                    --><li>&emsp;TimeUnit.SECONDS,</li><!--
+                                    --><li>&emsp;listOf("label1", "label2")</li><!--
+                                    --><li>)</li><!--
+                                    --><li> </li><!--
+                                    --><li>session.stopSession()</li><!--
+                                --></pre>
+                            </ol>
+                        </code>
+
+                        <code class="web">
+                            <ol>
+                                <pre><!--
+                                    --><li>import { Moonsense } from "@Moonsense/moonsense-web-sdk";</li><!--
+                                    --><li> </li><!--
+                                    --><li>const moonsenseSdk = new Moonsense({</li><!--
+                                    --><li>&emsp;publicToken: "ADD PUBLIC TOKEN HERE .."</li><!--
+                                    --><li>});</li><!--
+                                    --><li> </li><!--
+                                    --><li>const session = moonsenseSdk.startSesssion(15000);</li><!--
+                                    --><li> </li><!--
+                                    --><li>session.stopSession();</li><!--
+                                --></pre>
+                            </ol>
+                        </code>
+
+                    </aside>
+                    */
+                    </script>
+
+                </div>
 
         </section>
 
         <section class="fourth-section">
+            <div class="container">
 
-            <div>
+                <h2>Build your app with behavioral data designed for efficiency, control, and customization.</h2>
 
-                <h4>Designed for Developers</h4>
-                <h2>Behavioral Data Purpose-Built for Developers</h2>
-                <p>The Moonsense SDK gives developers seamless access to physical environment and behavioral insights for building superior apps and services.</p>
-                
-                <a class="btn" href="#" target="_blank">
-                    <span>Read the Documentation</span>
-                    <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/right-arrow-light_ac53888e.svg">
-                </a>            
+                <div class="grid">
 
-            </div>
+                    <div class="col-2-4">
+                        <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/settings-lavender_042c53c2.svg">                    
+                        <h3>Zero Configuration</h3>
+                        <p>From integrating the Moonsense SDK to capturing and processing customer data, Moonsense setup is seamless and requires no configuration.</p>
+                    </div><!--
+                        
+                    --><div class="col-2-4">
+                        <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/tick-lavender_67cae721.svg">
+                        <h3>Efficient & Resilient</h3>
+                        <p>Built for resiliency, the Moonsense SDK is highly efficient and built to respond easily to developer requirements for app and service integration.</p>
+                    </div><!--
+                        
+                    --><div class="col-2-4">
+                        <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/card-lavender_5d403a65.svg">
+                        <h3>Cost Effective</h3>
+                        <p>Providing access to global infrastructure for data ingestion so your team doesn’t have to, Moonsense data is integrated with minimal engineering effort.</p>
+                    </div><!--
 
-            <aside>
+                    --><div class="col-2-4">
+                        <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/mobile-lavender_9de772e0.svg">
+                        <h3>On-Device Feature Store</h3>
+                        <p>Built for internal teams that prioritize company security and user privacy, Moonsense provides advanced support for data processing and a unique feature store hosted securely on client devices.</p>
+                    </div>
 
-                <div>
-                    <div>iOS</div>
-                    <div>Android</div>
-                    <div>Web</div>
                 </div>
 
-                <code class="ios">
-                    <ol>
-                        <pre><!--
-                            --><li>import MoonsenseSDK</li><!--
-                            --><li> </li><!--
-                            --><li>Moonsense.initialize(</li><!--
-                            --><li>&emsp;publicToken: "ADD PUBLIC TOKEN HERE .."</li><!--
-                            --><li>)</li><!--
-                            --><li> </li><!--
-                            --><li>var session: Session? = try? Moonsense.startSession(</li><!--
-                            --><li>&emsp;duration: 15,</li><!--
-                            --><li>&emsp;labels: ["label1", "label2"]</li><!--
-                            --><li>)</li><!--
-                            --><li> </li><!--
-                            --><li>session?.stopSession()</li><!--
-                        --></pre>
-                    </ol>
-                </code>
-
-                <code class="android">
-                    <ol>
-                        <pre><!--
-                            --><li>import io.moonsense.sdk.Moonsense</li><!--
-                            --><li> </li><!--
-                            --><li>Moonsense.initialize(</li><!--
-                            --><li>&emsp;context,</li><!--
-                            --><li>&emsp;"ADD PUBLIC TOKEN HERE .."</li><!--
-                            --><li>)</li><!--
-                            --><li> </li><!--
-                            --><li>var session = Moonsense.startSession((</li><!--
-                            --><li>&emsp;15,</li><!--
-                            --><li>&emsp;TimeUnit.SECONDS,</li><!--
-                            --><li>&emsp;listOf("label1", "label2")</li><!--
-                            --><li>)</li><!--
-                            --><li> </li><!--
-                            --><li>session.stopSession()</li><!--
-                        --></pre>
-                    </ol>
-                </code>
-
-                <code class="web">
-                    <ol>
-                        <pre><!--
-                            --><li>import { Moonsense } from "@Moonsense/moonsense-web-sdk";</li><!--
-                            --><li> </li><!--
-                            --><li>const moonsenseSdk = new Moonsense({</li><!--
-                            --><li>&emsp;publicToken: "ADD PUBLIC TOKEN HERE .."</li><!--
-                            --><li>});</li><!--
-                            --><li> </li><!--
-                            --><li>const session = moonsenseSdk.startSesssion(15000);</li><!--
-                            --><li> </li><!--
-                            --><li>session.stopSession();</li><!--
-                        --></pre>
-                    </ol>
-                </code>
-
-            </aside>
-
+            </div>
         </section>
 
         <section class="fifth-section">
+            <div class="container">
 
-            <h2>Build your app with behavioral data designed for efficiency, control, and customization.</h2>
+                <div>
+                    <h4>About Moonsense</h4>
+                    <h2>Moonsense is a next-generation risk data acquisition and management company.</h2>
+                    <p>We give enterprise customers the capabilities to incorporate greater understanding of the user into new and existing applications. Driven to make solutions for developers like ourselves, Moonsense prioritizes customer privacy and control.</p>
+                </div>
 
-            <div class="grid">
+                <div>
 
-                <div class="col-2-4">
-                    <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/settings-lavender_042c53c2.svg">                    
-                    <h3>Zero Configuration</h3>
-                    <p>From integrating the Moonsense SDK to capturing and processing customer data, Moonsense setup is seamless and requires no configuration.</p>
-                </div><!--
-                    
-                --><div class="col-2-4">
-                    <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/tick-lavender_67cae721.svg">
-                    <h3>Efficient & Resilient</h3>
-                    <p>Built for resiliency, the Moonsense SDK is highly efficient and built to respond easily to developer requirements for app and service integration.</p>
-                </div><!--
-                    
-                --><div class="col-2-4">
-                    <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/card-lavender_5d403a65.svg">
-                    <h3>Cost Effective</h3>
-                    <p>Providing access to global infrastructure for data ingestion so your team doesn’t have to, Moonsense data is integrated with minimal engineering effort.</p>
-                </div><!--
+                    <div>
 
-                --><div class="col-2-4">
-                    <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/mobile-lavender_9de772e0.svg">
-                    <h3>On-Device Feature Store</h3>
-                    <p>Built for internal teams that prioritize company security and user privacy, Moonsense provides advanced support for data processing and a unique feature store hosted securely on client devices.</p>
+                        <div class="logo">
+                            <div class="col-2-4">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/foothill_dec69322.svg">
+                            </div><!--
+                            --><div class="col-2-4">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/sweat-equity_42b9cf82.svg">
+                            </div><!--
+                            --><div class="col-2-4">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/xyz_b13cceec.svg">
+                            </div><!--
+                            --><div class="col-2-4">
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3>Our investors</h3>
+                            <p>Moonsense has received the support of investment firms Foothill Ventures, Sweat Equity Ventures, and XYZ, and angel investors including John Lilly, Josh Wills, Sekhar Sarukkahi, and more.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="logo">
+
+                            <div class="col-2-4">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/amazon_07b27b93.svg">
+                            </div><!--
+                            --><div class="col-2-4">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/facebook_3b5e2bde.svg">
+                            </div><!--
+                            --><div class="col-2-4">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/vsco_4495f6f4.svg">
+                            </div><!--
+                            --><div class="col-2-4">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/twilio_fcf22601.svg">
+                            </div><!--
+                            --><div class="col-2-4">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/twitter_f9aff29e.svg">
+                            </div><!--
+                            --><div class="col-2-4">
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3>Team experience</h3>
+                            <p>With expert knowledge of mobile platforms and data infrastructure, Moonsense is made by developers for developers. Our founding team has developed and operated mission critical infrastructure at major global organizations including Amazon, Cloudera, Facebook, Twilio, Twitter, and VSCO.</p>
+                        </div>
+                        
+                    </div>
+
                 </div>
 
             </div>
-
         </section>
 
         <section class="sixth-section">
-
-            <div>
-                <h4>About Moonsense</h4>
-                <h2>Moonsense is a next-generation risk data acquisition and management company.</h2>
-                <p>We give enterprise customers the capabilities to incorporate greater understanding of the user into new and existing applications. Driven to make solutions for developers like ourselves, Moonsense prioritizes customer privacy and control.</p>
-            </div>
-
-            <div>
+            <div class="container">
 
                 <div>
-
-                    <div class="second-subsection__companies">
-                        <div class="col-2-4">
-                            <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/foothill_dec69322.svg">
-                        </div><!--
-                        --><div class="col-2-4">
-                            <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/sweat-equity_42b9cf82.svg">
-                        </div><!--
-                        --><div class="col-2-4">
-                            <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/xyz_b13cceec.svg">
-                        </div><!--
-                        --><div class="col-2-4">
-
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3>Our investors</h3>
-                        <p>Moonsense has received the support of investment firms Foothill Ventures, Sweat Equity Ventures, and XYZ, and angel investors including John Lilly, Josh Wills, Sekhar Sarukkahi, and more.</p>
-                    </div>
+                    <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/chart_ad75041c.svg">
+                    <h3>Schedule a demo</h3>
+                    <p>Let's talk about how we can help you collect device data that will make a difference to your business.</p>
+                    <a class="btn" href="#">Schedule a demo</a>
                 </div>
 
                 <div>
-                    <div class="third-subsection__investors">
+                    <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/flag_16658565.svg">
+                    <h3>Want to learn more?</h3>
+                    <p>Focus on building what matters most with Moonsense data solutions.</p>
+                    <a class="btn" href="#">Get Started</a>
+                </div>
 
-                        <div class="col-2-4">
-                            <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/amazon_07b27b93.svg">
-                        </div><!--
-                        --><div class="col-2-4">
-                            <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/facebook_3b5e2bde.svg">
-                        </div><!--
-                        --><div class="col-2-4">
-                            <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/vsco_4495f6f4.svg">
-                        </div><!--
-                        --><div class="col-2-4">
-                            <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/twilio_fcf22601.svg">
-                        </div><!--
-                        --><div class="col-2-4">
-                            <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/twitter_f9aff29e.svg">
-                        </div><!--
-                        --><div class="col-2-4">
-
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3>Team experience</h3>
-                        <p>With expert knowledge of mobile platforms and data infrastructure, Moonsense is made by developers for developers. Our founding team has developed and operated mission critical infrastructure at major global organizations including Amazon, Cloudera, Facebook, Twilio, Twitter, and VSCO.</p>
-                    </div>
-                    
+                <div>
+                    <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/email_f73af9a7.svg">
+                    <h3>Stay in touch</h3>
+                    <p>Join our community and receive news of the latest trends in behavioral and sensor-based data.</p>
+                    <form action="#">
+                        <input class="form" type="email" name="email" placeholder="Your email address" required>
+                        <input class="btn form-btn" type="submit" name="submit" value="Go">
+                    </form>
                 </div>
 
             </div>
-
-        </section>
-
-        <section class="seventh-section">
-
-            <div>
-                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/chart_ad75041c.svg">
-                <h3>Schedule a demo</h3>
-                <p>Let's talk about how we can help you collect device data that will make a difference to your business.</p>
-                <a class="btn" href="#">Schedule a demo</a>
-            </div>
-
-            <div>
-                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/flag_16658565.svg">
-                <h3>Want to learn more?</h3>
-                <p>Focus on building what matters most with Moonsense data solutions.</p>
-                <a class="btn" href="#">Get Started</a>
-            </div>
-
-            <div>
-                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/email_f73af9a7.svg">
-                <h3>Stay in touch</h3>
-                <p>Join our community and receive news of the latest trends in behavioral and sensor-based data.</p>
-                <form action="#">
-                    <input type="email" name="email" placeholder="Your email address" required>
-                    <input class="btn" type="submit" name="submit" value="Go">
-                </form>
-            </div>
-
         </section>
 
         <footer>
@@ -379,7 +455,7 @@
             <div class="legal">
                 <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/logo-greyed_15a9158c.svg">
                 <p>© Moonsense 2021. All rights reserved.</p>
-                <div>
+                <div class="info">
                     <a href="#">Terms & Condition</a>
                     <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/bullet_be8f98ed.svg">
                     <a href="#">Privacy Policy</a>
@@ -388,48 +464,51 @@
 
             <div class="links">
                 <nav class="menu-navigation">
+                    <div class="navigation group">
+                        <h3>Navigate</h3>
+                        <ul class="sub-menu">
 
-                    <h3>Navigate</h3>
-                    <ul class="sub-menu">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
 
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
 
-                        <li>
-                            <a href="#">Products</a>
-                        </li>
+                            <li>
+                                <a href="#">Use cases</a>
+                            </li>
 
-                        <li>
-                            <a href="#">Use cases</a>
-                        </li>
+                            <li>
+                                <a id="contrast" href="#">Schedule a call</a>
+                            </li>
 
-                        <li>
-                            <a href="#">Schedule a call</a>
-                        </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="navigation group"></div>
+                        <h3>Company</h3>
+                        <ul class="sub-menu">
 
-                    </ul>
+                            <li>
+                                <a href="#">Documents</a>
+                            </li>
 
-                    <h3>Company</h3>
-                    <ul class="sub-menu">
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
 
-                        <li>
-                            <a href="#">Documents</a>
-                        </li>
+                            <li>
+                                <a href="#">Status</a>
+                            </li>
 
-                        <li>
-                            <a href="#">Support</a>
-                        </li>
+                            <li>
+                                <a href="#">Jobs</a>
+                            </li>
 
-                        <li>
-                            <a href="#">Status</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Jobs</a>
-                        </li>
-
-                    </ul>
+                        </ul>
+                    </div>
 
                 </nav>
             </div>
