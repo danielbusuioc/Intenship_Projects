@@ -14,60 +14,67 @@
 
     <body>
 
+
         <header>
-            <nav role="navigation">
-                <div id="menu-toggle">
+            <nav class="top-nav" role="navigation">
 
-                    <input type="checkbox">
+                <input id="menu-toggle" type="checkbox">
 
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <label class="menu-button-container element element-button" for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
 
-                    <ul id="menu">
-                        
-                        <li class="menu-header">
-                            <a href="#">Products</a>
-                            <ul class="sub-menu">
-
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Products</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Use cases</a>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                        <li class="menu-header">
-                            <a href="#">Company</a>
-                            <ul class="sub-menu">
-
-                                <li>
-                                    <a href="#">Docs</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Blog</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Jobs</a>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                    </ul>
+                <div class="element-logo element">
+                    <a href="#"><img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/logo_34b678db.svg"></a>
                 </div>
+
+                <!--
+                <ul class="menu">
+                    
+                    <li class="menu-header col-2-4">
+                        <a href="#">Products</a>
+                        <ul class="sub-menu">
+
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Use cases</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu-header col-2-4">
+                        <a href="#">Company</a>
+                        <ul class="sub-menu">
+
+                            <li>
+                                <a href="#">Docs</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Jobs</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+                -->
+
             </nav>
         </header>
+
         <!--
         <header>
 
@@ -161,6 +168,7 @@
 
         </header>
         -->
+        
         <section class="first-section">
             <div class="container">
                 <h2>Understand the Human Behind the Device</h2>
@@ -173,33 +181,33 @@
         <section class="second-section">
             <div class="container">
 
-                <div">
+                <div>
                     <h4>Rich Behavioral Data for Identity Verification</h4>
                     <h2>Protect Accounts and Transactions</h2>
                     <p>Behavioral biometrics - how users behave and interact with devices and applications - is fundamentally changing account and transaction security. Each user’s unique pattern of behavior forms a virtual signature allowing teams to ensure the identity of the user, the security of the account or transaction, and even to streamline the user experience. </p>
                 </div>
 
-                <div>
+                <div class="flex-container">
 
-                    <div class="col-2-4">
+                    <div class="flex-element">
                         <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/bug_96de9e64.svg">
                         <h3>Flag Malware & Remote Access Tools</h3>
                         <p>Scam victims are “socially engineered” into providing device access using remote access tools. With Moonsense behavioral insights such as touch events and device orientation you can flag fraudulent users.</p>
-                    </div><!--
-                        
-                    --><div class="col-2-4">
+                    </div>
+                    
+                    <div class="flex-element">
                         <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/mobile-purple_33903dda.svg">
                         <h3>Identify Mobile Emulators</h3>
                         <p>Mobile device emulators spoof devices and mimic user behavior for account takeover. With Moonsense data, such as accelerator and gyroscope signals, you can easily identify fraudulent accounts.</p>
-                    </div><!--
-                        
-                    --><div class="col-2-4">
+                    </div>
+                    
+                    <div class="flex-element">
                         <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/danger_68dc6038.svg">
                         <h3>Stop Social Engineering Scams</h3>
                         <p>Bad actors try to influence users into providing device access. Moonsense insights will track unusual usage, such as atypical typing or login behavior, to help you crack down on these scams.</p>
-                    </div><!--
-
-                    --><div class="col-2-4">
+                    </div>
+                    
+                    <div class="flex-element">
                         <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/ninja_c1cb1a03.svg">
                         <h3>Guard Against Credential Theft</h3>
                         <p>Mobile device and account credential theft are common. Moonsense helps you guard against fraud with data points across location, GPS, and accelerometer to identify suspected theft.</p>
@@ -320,27 +328,27 @@
 
                 <h2>Build your app with behavioral data designed for efficiency, control, and customization.</h2>
 
-                <div class="grid">
+                <div class="grid  flex-container">
 
-                    <div class="col-2-4">
+                    <div class=" flex-element">
                         <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/settings-lavender_042c53c2.svg">                    
                         <h3>Zero Configuration</h3>
                         <p>From integrating the Moonsense SDK to capturing and processing customer data, Moonsense setup is seamless and requires no configuration.</p>
-                    </div><!--
-                        
-                    --><div class="col-2-4">
+                    </div>
+                    
+                    <div class=" flex-element">
                         <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/tick-lavender_67cae721.svg">
                         <h3>Efficient & Resilient</h3>
                         <p>Built for resiliency, the Moonsense SDK is highly efficient and built to respond easily to developer requirements for app and service integration.</p>
-                    </div><!--
-                        
-                    --><div class="col-2-4">
+                    </div>
+                    
+                    <div class=" flex-element">
                         <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/card-lavender_5d403a65.svg">
                         <h3>Cost Effective</h3>
                         <p>Providing access to global infrastructure for data ingestion so your team doesn’t have to, Moonsense data is integrated with minimal engineering effort.</p>
-                    </div><!--
-
-                    --><div class="col-2-4">
+                    </div>
+                    
+                    <div class=" flex-element">
                         <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/mobile-lavender_9de772e0.svg">
                         <h3>On-Device Feature Store</h3>
                         <p>Built for internal teams that prioritize company security and user privacy, Moonsense provides advanced support for data processing and a unique feature store hosted securely on client devices.</p>
@@ -364,19 +372,20 @@
 
                     <div>
 
-                        <div class="logo">
-                            <div class="col-2-4">
-                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/foothill_dec69322.svg">
-                            </div><!--
-                            --><div class="col-2-4">
-                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/sweat-equity_42b9cf82.svg">
-                            </div><!--
-                            --><div class="col-2-4">
-                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/xyz_b13cceec.svg">
-                            </div><!--
-                            --><div class="col-2-4">
+                        <div class="logo  flex-container">
 
+                            <div class="flex-element">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/foothill_dec69322.svg">
                             </div>
+                            
+                            <div class="flex-element">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/sweat-equity_42b9cf82.svg">
+                            </div>
+                            
+                            <div class="flex-element">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/xyz_b13cceec.svg">
+                            </div>
+
                         </div>
 
                         <div>
@@ -386,26 +395,28 @@
                     </div>
 
                     <div>
-                        <div class="logo">
+                        <div class="logo  flex-container">
 
-                            <div class="col-2-4">
+                            <div class="flex-element">
                                 <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/amazon_07b27b93.svg">
-                            </div><!--
-                            --><div class="col-2-4">
-                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/facebook_3b5e2bde.svg">
-                            </div><!--
-                            --><div class="col-2-4">
-                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/vsco_4495f6f4.svg">
-                            </div><!--
-                            --><div class="col-2-4">
-                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/twilio_fcf22601.svg">
-                            </div><!--
-                            --><div class="col-2-4">
-                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/twitter_f9aff29e.svg">
-                            </div><!--
-                            --><div class="col-2-4">
-
                             </div>
+                            
+                            <div class="flex-element">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/facebook_3b5e2bde.svg">
+                            </div>
+                            
+                            <div class="flex-element">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/vsco_4495f6f4.svg">
+                            </div>
+                            
+                            <div class="flex-element">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/twilio_fcf22601.svg">
+                            </div>
+                            
+                            <div class="flex-element">
+                                <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/twitter_f9aff29e.svg">
+                            </div>
+
                         </div>
 
                         <div>
@@ -421,7 +432,7 @@
         </section>
 
         <section class="sixth-section">
-            <div class="container">
+            <div class="container  flex-container">
 
                 <div>
                     <img src="https://www.moonsense.io/wp-content/themes/moonsense/dist/images/chart_ad75041c.svg">
@@ -463,8 +474,9 @@
             </div>
 
             <div class="links">
-                <nav class="menu-navigation">
-                    <div class="navigation group">
+                <nav class="flex-container">
+
+                    <div class="flex-element">
                         <h3>Navigate</h3>
                         <ul class="sub-menu">
 
@@ -487,7 +499,7 @@
                         </ul>
                     </div>
                     
-                    <div class="navigation group"></div>
+                    <div class="flex-element">
                         <h3>Company</h3>
                         <ul class="sub-menu">
 
@@ -514,7 +526,6 @@
             </div>
 
         </footer>
-
 
     </body>
 

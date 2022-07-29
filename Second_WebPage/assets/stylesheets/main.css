@@ -49,7 +49,23 @@ table {
 
 /*
 	=========================
-	Grid
+	Flex Elements
+	=========================
+*/
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.flex-element {
+    flex-basis: 49%;
+}
+
+/*
+	=========================
+	Custom Styles
 	=========================
 */
 
@@ -61,229 +77,8 @@ table {
 	        box-sizing: border-box;
 }
 
-.col-1-4,
-.col-2-4 {
-	padding-left: 15px;
-	padding-right: 15px;
-    margin-top: 10.66667vw;
-}
-.col-1-4,
-.col-2-4 {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.col-1-4 p,
-.col-2-4 p {
-	font-size: 3.73333vw;
-    line-height: 6.4vw;
-}
-
-.col-1-4 {
-	width: 25%;
-}
-.col-2-4 {
-	width: 50%;
-}
-
-
-
-/*
-	=========================
-	Clearfix
-	=========================
-*/
-
-.group:before,
-.group:after {
-	content: "";
-	display: table;
-}
-.group:after {
-	clear: both;
-}
-.group {
-	clear: both;
-	*zoom: 1;
-}
-
-/*
-	=========================
-	Header
-	=========================
-
-
-header {
-    position: fixed;
-    width: 100%;
-    margin-top: auto;
-    background-color: blue;
-    border-radius: 10px;
-}
-
-.header-top {
-    display: flex;
-}
-*/
-/*
-	=========================
-	HMenu
-	=========================
-*/
-
-#menuToggle
-{
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-  
-  z-index: 1;
-  
-  -webkit-user-select: none;
-          user-select: none;
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
-
-/*
-	=========================
-	Custom Styles
-	=========================
-*/
-
-.text-bold, b, strong {
-    font-weight: 700;
-  }
-
 body {
+    max-width: 1568px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -355,12 +150,139 @@ p {
     margin-top: 8.53333vw;
 }
 
-
 .btn:hover {
     background-color: #6108d4;
     color: #fefefe;
     font-weight: 500;
 }
+
+/*
+	=========================
+	Menu
+	=========================
+*/
+
+header {
+    position: absolute;
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+.top-nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    height: 3em;
+    margin-top: .7em;
+    width: 95%;
+    border-radius: 2.13333vw;
+    z-index: 100;
+    box-shadow: 0 0 .5em grey;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.element-logo a {
+    display: block;
+}
+
+.element-logo a img {
+    display: block;
+    height: 8vw;
+}
+
+/* Menu button */
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    position: absolute;
+    background-color: #000;
+    height: 1vw;
+    width: 7vw;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -2vw;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 2vw;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+  
+#menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+.menu-button-container {
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 7vw;
+}
+
+/*
+
+.menu {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu > li {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: #000;
+    background-color: #fff;
+}
+ */
 
 /*
 	=========================
@@ -382,6 +304,7 @@ p {
 .first-section h2 {
     font-weight: 700;
 }
+
 /*
 	=========================
 	Second Section
@@ -522,11 +445,6 @@ input {
 	=========================
 */
 
-.navigation {
-    float: left;
-    width: 50%;
-}
-
 #contrast {
     color: #882cff;
     font-weight: 500;
@@ -551,3 +469,74 @@ footer {
 
 .links h3 {
     color: #69676b;
+}
+
+
+
+/*
+    +++++++++++++++++++++++++++++
+    Responsive Design over 768px
+    +++++++++++++++++++++++++++++
+*/
+
+@media screen and (min-width: 768px) {
+
+    /*
+        =========================
+        Flex Elements
+        =========================
+    */
+
+    .flex-container {
+        flex-wrap: nowrap;
+    }
+
+    /*
+        =========================
+        Custom Styles
+        =========================
+    */
+
+    body {
+        font-size: 1.11111vw;
+        line-height: 1.94444vw;
+    }
+
+    /*
+        =========================
+        First Section
+        =========================
+    */
+
+    .first-section {
+        padding: 18.54166vw 2.26667vw 9.375vw;
+        background-position: left -.41667vw;
+        background-size: 108.88889vw;
+    }
+
+    /*
+        =========================
+        Second Section
+        =========================
+    */
+
+    .second-section {
+        padding: 8.88889vw 2.26667vw 17.36111vw;
+    }
+
+    /*
+        =========================
+        Third Section
+        =========================
+    */
+
+    .third-section {
+        padding: 16.11111vw 2.26667vw 7.43056vw;
+        clip-path: polygon(0 6.94444vw,100% 0,100% 100%,0 100%);
+        margin-top: -6.94444vw;
+        background-image: url("../images/globe-background.png");
+        background-position: right -.41667vw;
+        background-size: 97.77778vw;
+    }
+
+}
