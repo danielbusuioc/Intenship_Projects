@@ -363,9 +363,9 @@ header {
     color: #abb2bf;
     font-size: 1.93333vw;
     line-height: 2.46667vw;
-    border-radius: 2vw;
-    width: 100%;
     margin-top: 4vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
 }
 
 .code-header {
@@ -378,10 +378,13 @@ header {
     background-color: #282c34;
     border-top-left-radius: 2vw;
     border-top-right-radius: 2vw;
+    width: 100%;
 }
 
 .code code {
     padding: 2vw 3vw;
+    width: 100%;
+    overflow: auto;
 }
 
 .code-header div {
@@ -423,6 +426,31 @@ header {
 
 #web:checked ~ div label[for=web] div {
     background-color: #882cff;
+}
+
+pre ol,
+ol pre {
+    list-style-type: decimal;
+}
+
+.blue {
+    color: #61aeee;
+}
+
+.yellow {
+    color: #e6c07b;
+}
+
+.orange {
+    color: #d19a66;
+}
+
+.purple {
+    color: #c678dd;
+}
+
+.green {
+    color: #98c379;
 }
 
 /*
@@ -813,7 +841,11 @@ footer .socials {
     }
 
     .after-flex .code {
-        max-width: 50%;
+        width: 50%;
+    }
+
+    .after-flex .code-info {
+        width: 40%;
     }
 
     .code aside {

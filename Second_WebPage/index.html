@@ -223,38 +223,38 @@
                             </div>
 
                             <code class="ios">
-                                <ol><!---->
-                                    <pre><!--
-                                        --><li>import MoonsenseSDK</li><!--
+                                <pre>
+                                    <ol><!--
+                                        --><li><span class="purple">import</span> MoonsenseSDK</li><!--
                                         --><li> </li><!--
-                                        --><li>Moonsense.initialize(</li><!--
-                                        --><li>&emsp;publicToken: "ADD PUBLIC TOKEN HERE .."</li><!--
+                                        --><li><span class="orange">Moonsense</span>.initialize(</li><!--
+                                        --><li>&emsp;publicToken: <span class="green">"ADD PUBLIC TOKEN HERE .."</span></li><!--
                                         --><li>)</li><!--
                                         --><li> </li><!--
-                                        --><li>var session: Session? = try? Moonsense.startSession(</li><!--
-                                        --><li>&emsp;duration: 15,</li><!--
-                                        --><li>&emsp;labels: ["label1", "label2"]</li><!--
+                                        --><li><span class="purple">var</span> session: <span class="orange">Session</span>? = <span class="purple">try?</span> <span class="orange">Moonsense</span>.startSession(</li><!--
+                                        --><li>&emsp;duration: <span class="orange">15</span>,</li><!--
+                                        --><li>&emsp;labels: [<span class="green">"label1"</span>, <span class="green">"label2"</span>]</li><!--
                                         --><li>)</li><!--
                                         --><li> </li><!--
                                         --><li>session?.stopSession()</li><!--
-                                    --></pre>
-                                </ol>
+                                    --></ol>
+                                </pre>
                             </code>
 
                             <code class="android">
                                 <ol>
                                     <pre><!--
-                                        --><li>import io.moonsense.sdk.Moonsense</li><!--
+                                        --><li><span class="purple">import</span> io.moonsense.sdk.Moonsense</li><!--
                                         --><li> </li><!--
                                         --><li>Moonsense.initialize(</li><!--
                                         --><li>&emsp;context,</li><!--
-                                        --><li>&emsp;"ADD PUBLIC TOKEN HERE .."</li><!--
+                                        --><li>&emsp;<span class="green">"ADD PUBLIC TOKEN HERE .."</span></li><!--
                                         --><li>)</li><!--
                                         --><li> </li><!--
-                                        --><li>var session = Moonsense.startSession((</li><!--
-                                        --><li>&emsp;15,</li><!--
+                                        --><li><span class="orange">var session</span> = Moonsense.startSession((</li><!--
+                                        --><li>&emsp;<span class="orange">15</span>,</li><!--
                                         --><li>&emsp;TimeUnit.SECONDS,</li><!--
-                                        --><li>&emsp;listOf("label1", "label2")</li><!--
+                                        --><li>&emsp;listOf(<span class="green">"label1"</span>, <span class="green">"label2"</span>)</li><!--
                                         --><li>)</li><!--
                                         --><li> </li><!--
                                         --><li>session.stopSession()</li><!--
@@ -265,15 +265,15 @@
                             <code class="web">
                                 <ol>
                                     <pre><!--
-                                        --><li>import { Moonsense } from "@Moonsense/moonsense-web-sdk";</li><!--
+                                        --><li><span class="purple">import</span> { <span class="yellow">Moonsense</span> } <span class="purple">from</span> <span class="green">"@Moonsense/moonsense-web-sdk"</span>;</li><!--
                                         --><li> </li><!--
-                                        --><li>const moonsenseSdk = new Moonsense({</li><!--
-                                        --><li>&emsp;publicToken: "ADD PUBLIC TOKEN HERE .."</li><!--
+                                        --><li><span class="purple">const</span> moonsenseSdk = <span class="purple">new</span> <span class="yellow">Moonsense</span>({</li><!--
+                                        --><li>&emsp;<span class="orange">publicToken</span>: <span class="green">"ADD PUBLIC TOKEN HERE .."</span></li><!--
                                         --><li>});</li><!--
                                         --><li> </li><!--
-                                        --><li>const session = moonsenseSdk.startSesssion(15000);</li><!--
+                                        --><li><span class="purple">const</span> session = moonsenseSdk.<span class="blue">startSesssion</span>(<span class="orange">15000</span>);</li><!--
                                         --><li> </li><!--
-                                        --><li>session.stopSession();</li><!--
+                                        --><li>session.<span class="blue">stopSession</span>();</li><!--
                                     --></pre>
                                 </ol>
                             </code>
