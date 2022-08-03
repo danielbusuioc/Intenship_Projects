@@ -359,7 +359,7 @@ header {
 .code aside {
     display: block;
     background: #3e475f;
-    width: 96%;
+    width: 100%;
     color: #abb2bf;
     font-size: 1.93333vw;
     line-height: 2.46667vw;
@@ -845,7 +845,7 @@ footer .socials {
     }
 
     .after-flex .code-info {
-        width: 40%;
+        width: 50%;
     }
 
     .code aside {
@@ -891,10 +891,15 @@ footer .socials {
     .sixth-section h3 {
         font-size: 1.66667vw;
         line-height: 2.22222vw;
+        height: 4.5vw;
+    }
+
+    .sixth-section p {
+        height: 8.7vw;
     }
 
     .form {
-        width: 75%;
+        width: 70%;
         height: 3.33333vw;
         border-radius: .55556vw;
         border: .06944vw solid #c1c1c1;
